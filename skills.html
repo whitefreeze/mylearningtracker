@@ -7,12 +7,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/solid.min.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/mystyles.css">
 </head>
 <body>
   
 <div class="ui container">
-  <h1>My Learning Tracker</h1>
+  <h1 class="ui header">
+    <img src="images/avatars/J100Sq.jpg" class="ui circular image">
+    My Learning Tracker
+  </h1>
+
   <hr>
   <h2 class="ui horizontal divider header">
     <i class="bar chart icon"></i>
@@ -126,7 +131,7 @@
         <td><strong>Semantic UI</strong></td>
         <td class="center aligned"><i class="large green checkmark icon"></i></td>
         <td class="center aligned"><i class="large green checkmark icon"></i></td>
-        <td class="center aligned"></td>
+        <td class="center aligned"><i class="large green checkmark icon"></i></td>
         <td class="center aligned"></td>
         <td class="center aligned"></td>
         <td class="center aligned"></td>
@@ -180,7 +185,7 @@
         <td><strong>Command line</strong></td>
         <td class="center aligned"><i class="large green checkmark icon"></i></td>
         <td class="center aligned"><i class="large green checkmark icon"></i></td>
-        <td class="center aligned"></td>
+        <td class="center aligned"><i class="large green checkmark icon"></i></td>
         <td class="center aligned"></td>
         <td class="center aligned"></td>
         <td class="center aligned"></td>
@@ -188,7 +193,7 @@
       <tr>
         <td><strong>Progressive Enhancement</strong></td>
         <td class="center aligned"><i class="large green checkmark icon"></i></td>
-        <td class="center aligned"></td>
+        <td class="center aligned"><i class="large green checkmark icon"></i></td>
         <td class="center aligned"></td>
         <td class="center aligned"></td>
         <td class="center aligned"></td>
@@ -321,12 +326,12 @@
     <hr>
     <h2 class="ui horizontal divider header">
       <i class="fas fa-certificate"></i>
-      Certificates
+      Udemy Certificates
     </h2>
 
 
 
-    <div class="ui special cards three column grid">
+    <div class="ui special cards three column grid" id="certs">
       <div class="column">
         <div class="ui fluid card">
           <div class="blurring dimmable image">
@@ -340,7 +345,7 @@
                 </div>
               </div>
             </div>
-            <img src="images/certs/Alicea-JSUnderstandingTheWeirdParts.pdf">
+            <img src="https://mylearningtracker.s3.amazonaws.com/images/certs/Alicea-JSUnderstandingTheWeirdParts.pdf">
           </div>
           <div class="content">
             <a class="header" href="https://www.udemy.com/course/understand-javascript/" target="_blank">
@@ -365,7 +370,7 @@
                 </div>
               </div>
             </div>
-            <img src="images/certs/Steele-WebDeveloperBootcamp.pdf">
+            <img src="https://mylearningtracker.s3.amazonaws.com/images/certs/Steele-WebDeveloperBootcamp.pdf">
           </div>
           <div class="content">
             <a class="header" href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">
@@ -390,7 +395,7 @@
                 </div>
               </div>
             </div>
-            <img src="images/certs/Schoonover-IntroToGit.pdf">
+            <img src="https://mylearningtracker.s3.amazonaws.com/images/certs/Schoonover-IntroToGit.pdf">
           </div>
           <div class="content">
             <a class="header" href="https://www.udemy.com/course/intro-to-git/" target="_blank">
@@ -410,146 +415,163 @@
       <i class="bullseye icon"></i>
       Interests
     </h2>
-    <p>
-      I'm currently interested in/excited about:
-    </p>
-    <ul>
-      <li><strong>AWS S3</strong></li>
-      <li><strong>AWS Lambda</strong></li>
-      <li><strong>Serverless</strong></li>
-      <li><strong>Let's Encrypt</strong></li>
-      <li><strong>NoSQL Databases</strong></li>
-    </ul>
-  
 
+    <div class="ui centered raised card">
+      <div class="content">
+        <div class="header">Passion</div>
+        <div class="meta">
+          <span class="category">Present</span>
+        </div>
+        <div class="description">
+          <p>
+            <ul class="ui list">
+              <ul>
+                <li data-aos="fade-left"><strong>AWS S3</strong></li>
+                <li data-aos="fade-left"><strong>AWS Lambda</strong></li>
+                <li data-aos="fade-left"><strong>Serverless</strong></li>
+                <li data-aos="fade-left"><strong>Let's Encrypt</strong></li>
+                <li data-aos="fade-left"><strong>NoSQL Databases</strong></li>
+              </ul>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="extra content">
+        <div class="right floated author">
+          <img class="ui avatar image" src="images/avatars/J100Sq.jpg"> Josh
+        </div>
+      </div>
+    </div>
+  
+    
     <hr>
     <h2 class="ui horizontal divider header">
       <i class="tasks icon"></i>
       Web Development Checklist
     </h2>
   
-    <div class="ui form">
-      <div class="inline field">
+    <div class="ui form" id="radioslides">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input checked type="checkbox" tabindex="0" class="hidden">
           <label>Open the computer’s terminal</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input checked type="checkbox" tabindex="0" class="hidden">
           <label>Use a text editor (bonus points if you have a specific reason for choosing it)</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input checked type="checkbox" tabindex="0" class="hidden">
           <label>Use some keyboard shortcuts</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input type="checkbox" tabindex="0" class="hidden">
           <label>Write tests for your code</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input type="checkbox" tabindex="0" class="hidden">
           <label>Help another web developer with something they’re having trouble with</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input checked type="checkbox" tabindex="0" class="hidden">
           <label>Attend an event about web development</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input checked type="checkbox" tabindex="0" class="hidden">
           <label>Follow developers you admire on social media</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input checked type="checkbox" tabindex="0" class="hidden">
           <label>Read a book about coding</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input checked type="checkbox" tabindex="0" class="hidden">
           <label>Open your browser console</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input checked type="checkbox" tabindex="0" class="hidden">
           <label>Get data from an API</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input type="checkbox" tabindex="0" class="hidden">
           <label>Hide API keys from the public</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input type="checkbox" tabindex="0" class="hidden">
           <label>Post a question on Stack Overflow</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input checked type="checkbox" tabindex="0" class="hidden">
           <label>Push code to GitHub or GitLab or BitBucket</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input type="checkbox" tabindex="0" class="hidden">
           <label>Speak about something web development-related at an event</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input type="checkbox" tabindex="0" class="hidden">
           <label>Complete a technical interview</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input type="checkbox" tabindex="0" class="hidden">
           <label>Participate in a hackathon</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input checked type="checkbox" tabindex="0" class="hidden">
           <label>Deploy a project</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input type="checkbox" tabindex="0" class="hidden">
           <label>Ship your project to a store</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input type="checkbox" tabindex="0" class="hidden">
           <label>Contribute to open source</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input type="checkbox" tabindex="0" class="hidden">
           <label>Get paid to code</label>
         </div>
       </div>
-      <div class="inline field">
+      <div class="inline field" data-aos="fade-left">
         <div class="ui toggle checkbox">
           <input type="checkbox" tabindex="0" class="hidden">
           <label>When people ask what you do, respond saying you’re a developer :)</label>
@@ -561,12 +583,25 @@
     <ul></ul>
 
     <hr>
+
+    <!-- <div class="ui embed" data-url="https://docs.google.com/document/d/1Pt8K3NYaBzqaB38mnTY-gyYKUunpyuiesNoqPy8p8Ec/edit?usp=sharing" data-placeholder="/images/image-16by9.png" data-icon="right circle arrow">
+    </div> -->
+
+
+
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
     <p>&nbsp;</p>
   
-  </div>
+  </div> <!-- container -->
+
+  <!-- https://docs.google.com/document/d/1Pt8K3NYaBzqaB38mnTY-gyYKUunpyuiesNoqPy8p8Ec/edit?usp=sharing -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init(); </script>
   <script src="js/script.js"></script>
 </body>
 </html>
