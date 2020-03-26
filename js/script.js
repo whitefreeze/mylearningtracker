@@ -37,9 +37,34 @@ $('#skills').visibility({    // grab parent container
         animation : 'fade',
         interval : 35
       })
+    }
+  });
 
-}
-});
+  $('#learning').visibility({    // grab parent container
+  onOnScreen: function(calculations) {
+      console.log('Shapooo');
+      $('.status')    // grab individuals under parent
+      .transition({
+        animation : 'fade',
+        interval : 300
+      })
+      $('.year, .course, .tutor')    // grab individuals under parent
+      .transition({
+        animation : 'fade',
+        interval : 100
+      })
+/*       $('.course')    // grab individuals under parent
+      .transition({
+        animation : 'fade',
+        interval : 100
+      })
+      $('.tutor')    // grab individuals under parent
+      .transition({
+        animation : 'fade',
+        interval : 100
+      }) */
+    }
+  });
 
 
 /* 
