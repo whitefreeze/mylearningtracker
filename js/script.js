@@ -4,15 +4,6 @@ $('.special.cards .image').dimmer({
 
 $('.url.example .ui.embed').embed();
 
-/* $('.fluid.card')
-  .transition({
-    debug     : true,
-    animation : 'jiggle',
-    duration  : 500,
-    interval  : 200
-  })
-; */
-
 $('#certs').visibility({    // grab parent container
   onBottomVisible: function(calculations) {
       console.log('Shabooom');
@@ -53,18 +44,6 @@ $('#skills').visibility({    // grab parent container
         animation : 'fade',
         interval : 100
       })
-/*       $('.course')    // grab individuals under parent
-      .transition({
-        animation : 'fade',
-        interval : 100
-      })
-      $('.tutor')    // grab individuals under parent
-      .transition({
-        animation : 'fade',
-        interval : 100
-      }) */
-    }
-  });
 
 
 /* 
@@ -85,32 +64,4 @@ onTopPassed: function(calculations) {
 });
  */
 
-
-
-
-/* $('.form.radioslides .inline.field')
-  .transition('hide')
-; */
-
-/* $('.form.radioslides')
-  .visibility({
-    'hide'
-    }
-  })
-; */
-
-/* let showem = function(){
-  $('.form.radioslides .inline.field').transition('scale')
-;
-}
- 
-$('.form.radioslides .inline.field').visibility({
-  once: false,
-  onBottomVisible: function() {
-     showem();
-  }
-})
-;
-
- */
 
