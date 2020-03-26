@@ -24,16 +24,22 @@ $('#certs').visibility({    // grab parent container
     }
   });
 
-/*       $('#radioslides').visibility({    // grab parent container
-  onBottomVisible: function(calculations) {
+$('#skills').visibility({    // grab parent container
+  onOnScreen: function(calculations) {
       console.log('Shabaaam');
-      $('.inline.field')    // grab individuals under parent
+      $('#skills tr td strong')    // grab individuals under parent
       .transition({
-        animation : 'swing down', 
-        interval : 200
+        animation : 'fade',
+        interval : 100
       })
+      $('#skills tr td i')    // grab individuals under parent
+      .transition({
+        animation : 'fade',
+        interval : 35
+      })
+
 }
-}); */
+});
 
 
 /* 
