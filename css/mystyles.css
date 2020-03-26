@@ -1,7 +1,4 @@
-#certs {
-  visibility: hidden;
-}
-
+/* hide all elements to have them animate in when on screen */
 #skills tr td strong {
   visibility: hidden;
 }
@@ -12,5 +9,9 @@
 
 
 #learning tr td span {
+  visibility: hidden;
+}
+
+#certs {
   visibility: hidden;
 }
