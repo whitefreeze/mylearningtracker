@@ -1,0 +1,16 @@
+#certs {
+  visibility: hidden;
+}
+
+#skills tr td strong {
+  visibility: hidden;
+}
+
+#skills tr td i {
+  visibility: hidden;
+}
+
+
+#learning tr td span {
+  visibility: hidden;
+}
