@@ -45,7 +45,7 @@ $('#certs').visibility({    // grab parent container
     console.log('Shabooom');
     $('.fluid.card')    // grab individuals under parent
     .transition({
-      animation : 'fade', 
+      animation : 'swing down', 
       interval : 200
     })
   }
