@@ -7,11 +7,66 @@
   visibility: hidden;
 }
 
-
 #learning tr td span {
   visibility: hidden;
 }
 
 #certs {
   visibility: hidden;
+}
+
+#the-title {
+  visibility: hidden;
+}
+
+#avatar {
+  visibility: hidden;
+}
+
+
+/* prevent link color from making button text unreadable */
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+
+/* pad the top and bottom of the page (and some buttons that stack) */
+.padding-class {
+  margin-bottom: 5px!important
+}
+
+.ui.segment .huge.header {
+  padding-top: 40px!important;
+  padding-bottom: 40px!important;
+}
+
+
+/* hiding the level numbers (now entire Skills block) on mobile, as it does not flow. */
+@media screen and (max-width: 768px) {
+  .levelBig{
+    display : none;
+  }
+  .levelSm{
+    display : block;
+  }
+  .hide-skills-small{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .levelBig{
+    display : block;
+  }
+  .levelSm{
+    display : none;
+  }
 }

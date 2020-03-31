@@ -12,13 +12,34 @@
 </head>
 <body>
   
-<div class="ui container">
-  <h1 class="ui header">
-    <img src="https://mylearningtracker.s3.amazonaws.com/images/avatars/J100Sq.jpg" class="ui circular image">
-    My Learning Tracker
-  </h1>
+<div class="ui container"> <!-- main page container -->
+
+  <p>&nbsp;</p>
+
+  <div class="ui segment">
+    <div class="ui middle aligned two column centered grid">
+      <div class="four column centered row">
+
+        <div class="column">
+          <img class="ui circular image olive basic label" id="avatar" src="https://mylearningtracker.s3.amazonaws.com/images/avatars/J100Sq.jpg">    
+        </div>
+        
+        <div class="six wide column">
+          <div class="ui huge header">
+            <title class="ui " id="the-title">
+              My Learning Tracker
+            </title> 
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> 
 
   <hr>
+
+  <div class="hide-skills-small">
+
   <h2 class="ui horizontal divider header">
     <i class="bar chart icon"></i>
     Skills
@@ -28,14 +49,32 @@
     <thead>
       <tr>
         <th class="center aligned" colspan="1">Level</th>
-        <th class="center aligned" colspan="1">Introduction</th>
-        <th class="center aligned" colspan="1">Basics</th>
-        <th class="center aligned" colspan="1">Good</th>
-        <th class="center aligned" colspan="1">Pretty Good</th>
-        <th class="center aligned" colspan="1">Confident</th>
-        <th class="center aligned" colspan="1">Awesome</th>
+        <th class="center aligned" colspan="1">
+          <p class="levelBig">1</p>
+          Introduction
+        </th>
+        <th class="center aligned" colspan="1">
+          <p class="levelBig">2</p>
+          Basics
+        </th>
+        <th class="center aligned" colspan="1">
+          <p class="levelBig">3</p>
+          Good
+        </th>
+        <th class="center aligned" colspan="1">
+          <p class="levelBig">4</p>
+          Pretty Good
+        </th>
+        <th class="center aligned" colspan="1">
+          <p class="levelBig">5</p>
+          Confident
+        </th>
+        <th class="center aligned" colspan="1">
+          <p class="levelBig">6</p>
+          Awesome
+        </th>
       </tr>
-      <tr>
+<!--       <tr>
         <th class="center aligned">Skill</th>
         <th class="center aligned">1</th>
         <th class="center aligned">2</th>
@@ -43,7 +82,7 @@
         <th class="center aligned">4</th>
         <th class="center aligned">5</th>
         <th class="center aligned">6</th>
-      </tr>
+      </tr> -->
     </thead>
     <tbody id="skills">
       <tr>
@@ -204,6 +243,9 @@
 
 
   <hr>
+
+</div>
+
   <h2 class="ui horizontal divider header">
     <i class="book icon"></i>
     Learning
@@ -335,11 +377,11 @@
       <div class="column">
         <div class="ui fluid card">
           <div class="blurring dimmable image">
-            <div class="ui dimmer">
+            <div class="ui inverted dimmer">
               <div class="content">
                 <div class="center">
-                  <div class="ui inverted button">
-                  <a href="https://www.udemy.com/course/understand-javascript/" target="_blank">Go to Class</a>
+                  <div class="ui secondary button">
+                  <a href="https://www.udemy.com/course/understand-javascript/" target="_blank">Class Overview</a>
                   </div>
                 </div>
               </div>
@@ -360,11 +402,11 @@
       <div class="column">
         <div class="ui fluid card">
           <div class="blurring dimmable image">
-            <div class="ui dimmer">
+            <div class="ui inverted dimmer">
               <div class="content">
                 <div class="center">
-                  <div class="ui inverted button">
-                  <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">Go to Class</a>
+                  <div class="ui secondary button">
+                  <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">Class Overview</a>
                   </div>
                 </div>
               </div>
@@ -385,11 +427,11 @@
       <div class="column">
         <div class="ui fluid card">
           <div class="blurring dimmable image">
-            <div class="ui dimmer">
+            <div class="ui inverted dimmer">
               <div class="content">
                 <div class="center">
-                  <div class="ui inverted button">
-                  <a href="https://www.udemy.com/course/intro-to-git/" target="_blank">Go to Class</a>
+                  <div class="ui secondary button">
+                  <a href="https://www.udemy.com/course/intro-to-git/" target="_blank">Class Overview</a>
                   </div>
                 </div>
               </div>
@@ -582,18 +624,159 @@
     <ul></ul>
 
     <hr>
+    <h2 class="ui horizontal divider header">
+      <i class="fas fa-paper-plane"></i>
+      Résumé
+    </h2>
+
+    <div class="ui centered card">
+      <div class="ui slide masked reveal image toggle">
+        <img src="https://mylearningtracker.s3.amazonaws.com/images/res/Blackburn-2020-1.png" class="visible content">
+        <img src="https://mylearningtracker.s3.amazonaws.com/images/res/Blackburn-2020-2.png" class="hidden content">
+      </div>
+      <div class="content">
+        <a class="header toggle">Click to preview</a>
+        <div class="meta">
+          <span>(PDF file: two pages) </span>
+        </div>
+      </div>
+      <div class="extra content">
+        <a href="https://mylearningtracker.s3.amazonaws.com/images/res/Blackburn-2020.pdf" download>
+          <i class="fa fa-download"></i>&nbsp; Download
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Resume Modal -->
+    <div class="ui container">
+      <div class="ui modal" id="modal">
+        <i class="close icon"></i>
+        <div class="header">
+          The Résumé of:
+        </div>
+        <div class="image content">
+          <div class="ui image">
+            <img src="https://mylearningtracker.s3.amazonaws.com/images/res/Blackburn-2020-1.png" alt="Resume of Josh Blackburn">
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui primary button">
+            <a href="https://mylearningtracker.s3.amazonaws.com/images/res/Blackburn-2020.pdf" download>
+              <i class="fa fa-download"></i> Download
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul></ul>
+
+    <hr>
+    <h2 class="ui horizontal divider header">
+      <i class="fas fa-link"></i>
+      Portfolio links
+    </h2>
+
+    <div class="ui special three stackable cards">
+
+      <div class="teal card">
+        <div class="blurring dimmable image">
+          <div class="ui inverted dimmer">
+            <div class="content">
+              <div class="center">
+                <div class="ui linkedin button">
+                  <a href="https://djsda.org" target="_blank">
+                    Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="https://mylearningtracker.s3.amazonaws.com/images/ports/djsda.png">
+        </div>
+        <div class="content">
+          <a class="header" href="https://djsda.org" target="_blank">Church Site v1</a>
+          <div class="meta">
+            <a class="category" href="https://djsda.org" target="_blank"><p>This site was made "from scratch" using Bootstrap for the carousel, cards and nav bar. JS & jQuery were used for tab selection/swapping & language toggling. Site is hosted using AWS S3 bucket hosting & CloudFront for https rerouting to use SSL certificate.</p> <p>In this project I learned the value of doing it yourself and being able to dig through resources to find the key that unlocks your code from the most recent error.</p> </a>
+          </div>
+        </div>
+      </div> <!-- djsda teal card -->
+
+      <div class="green card">
+        <div class="blurring dimmable image">
+          <div class="ui inverted dimmer">
+            <div class="content">
+              <div class="center">
+                <div class="ui green button">
+                  <a href="https://immense-escarpment-71009.herokuapp.com/campgrounds" target="_blank">
+                    Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="https://mylearningtracker.s3.amazonaws.com/images/ports/yelpcamp.png">
+        </div>
+        <div class="content">
+          <a class="header" href="https://immense-escarpment-71009.herokuapp.com/campgrounds" target="_blank">YelpCamp</a>
+          <div class="meta">
+            <a class="category" href="https://immense-escarpment-71009.herokuapp.com/campgrounds" target="_blank"><p>This site was the capstone project of a full-stack JS course. Bootstrap was used for buttons and cards. RESTful routing was applied using Node/Express/Mongoose. MongoDB was the NoSQL database used and hosted on AWS.</p> <p>The most important thing I learned through this project, was RESTful routing and how to wire up a site and connect to a database.</p> </a>
+          </div>
+        </div>
+      </div> <!-- yelpcamp teal card -->
+
+      <div class="yellow card">
+        <div class="blurring dimmable image">
+          <div class="ui inverted dimmer">
+            <div class="content">
+              <div class="center">
+                <div class="ui yellow button">
+                  <a href="https://xd.adobe.com/view/09a2c92a-3647-4119-7b58-54d44164d293-7f93/?fullscreen" target="_blank">
+                    Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="https://mylearningtracker.s3.amazonaws.com/images/ports/djsdav2.png">
+        </div>
+        <div class="content">
+          <a class="header" href="https://xd.adobe.com/view/09a2c92a-3647-4119-7b58-54d44164d293-7f93/?fullscreen" target="_blank">Church Site v2 alpha</a>
+          <div class="meta">
+            <a class="category" href="https://xd.adobe.com/view/09a2c92a-3647-4119-7b58-54d44164d293-7f93/?fullscreen" target="_blank"> <p>The next iteration of the Church Site will include RESTful routing with a database so that the end user will be able to update the contents of the site without any assitance.</p> <p>Currently, I am learning the Serverless framework in order to assist deploying such a site to AWS.</p> <p>I look forward to the challenge.</p> </a>
+          </div>
+        </div>
+        <div class="extra content ui center aligned grid">
+          
+          <a class="ui teal basic label padding-class" href="https://xd.adobe.com/view/09a2c92a-3647-4119-7b58-54d44164d293-7f93/?fullscreen" target="_blank">
+            <i class="fas fa-mobile-alt"></i>&nbsp; Mobile
+          </a>
+
+          <a class="ui blue basic label padding-class" href="https://djsda.org/share/DJSDA2.mp4" target="_blank">
+            <i class="fas fa-desktop"></i>&nbsp; Desktop
+          </a>
+
+          <a class="ui purple basic label padding-class" href="https://djsda.org/share/djsda-layout.png" target="_blank">
+            <i class="fas fa-layer-group"></i>&nbsp; Prototype
+          </a>
+
+        </div>
+      </div> <!-- yelpcamp teal card -->
+
+    </div> <!-- ui special cards -->
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
   
-  </div> <!-- container -->
+  </div> <!-- page container -->
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script> AOS.init(); </script>
   <script src="https://mylearningtracker.s3.amazonaws.com/js/script.js"></script>
+  <script> AOS.init(); </script>
 </body>
 </html>
